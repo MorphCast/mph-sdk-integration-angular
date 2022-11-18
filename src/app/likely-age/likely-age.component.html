@@ -1,0 +1,14 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-row justify-content-between align-items-center">
+      <span class="age" id="ageMin">{{ ageMin }}</span>
+      <input
+      type="range"
+      min="1"
+      max="100"
+      [value]="ageValue"
+      class="slider"
+    />
+      <span class="age" id="ageMax">{{ ageMax }}</span>
+    </div>
+    <span id="title">Likely Age</span>
+  </div>

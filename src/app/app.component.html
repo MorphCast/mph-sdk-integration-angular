@@ -1,0 +1,40 @@
+<style>
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+</style>
+
+<div class="content" role="main">
+  <div style="width:640px; height: 480px; position:relative">
+    <video id="VideoEl" ngModel #VideoEl></video>
+    <app-face-tracker *ngIf="loadFaceTracker" [videoEl]="(loadFaceTracker)?videoEl?.nativeElement : undefined"></app-face-tracker>
+  </div>
+  <p style="font-size:20px; text-align: center;">Gender Component:</p>
+  <gender-component></gender-component>
+  <hr class="solid" style="width:100%">
+  <p style="font-size:20px; text-align: center;">DominantEmotion Component:</p>
+  <app-dominant-emotion></app-dominant-emotion>
+  <hr class="solid" style="width:100%">
+  <p style="font-size:20px; text-align: center;">LikelyAge Component:</p>
+  <app-likely-age></app-likely-age>
+  <hr class="solid" style="width:100%">
+  <p style="font-size:20px; text-align: center;">EmotionBars Component:</p>
+  <app-emotion-bars></app-emotion-bars>
+  <hr class="solid" style="width:100%">
+  <p style="font-size:20px; text-align: center;">Features Component:</p>
+  <app-feature></app-feature>
+  <hr class="solid" style="width:100%">
+  <p style="font-size:20px; text-align: center;">Engagement Component:</p>
+  <app-engagement></app-engagement>
+  <hr class="solid" style="width:100%">
+  <p style="font-size:20px; text-align: center;">Mood Component:</p>
+  <app-mood></app-mood>
+</div>
+
+

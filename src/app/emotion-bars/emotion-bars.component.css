@@ -1,0 +1,24 @@
+#emotionsContainer {
+    position: relative;
+    width: 402px;
+    height: 141px;
+    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+    border-radius: 41px;
+    display: flex;
+  }
+  .big {
+    height: 210px !important;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #emotionsContainer {
+      height: 141px !important;
+      width: 350px;
+    }
+  }
+  @media only screen and (max-height: 832px) {
+    #emotionsContainer {
+      height: 130px !important;
+    }
+  }
